@@ -1,19 +1,18 @@
-var jsString = `try {
+jsString = `try {
   console.log().log("Hello World !");
 } else {
   error();
 }`;
 
-var esprima = require("esprima");
+esprima = require("esprima");
 
 var r = esprima.tokenize(jsString);
 console.log(r);
 
-for (var i = 0; i < r.length; i++) {
-  var no = true;
+for (i = 0; i < r.length; i++) {
+  no = true;
   if (r[i].type === "Keyword" && r[i].value === "else") {
-    for (var j = i; j >= 0; j--) {
-      console.log(j);
+    for (j = i; j >= 0; j--) {
       if (r[j].type === "Keyword" && r[j].value === "if") {
         no = true;
         break;
