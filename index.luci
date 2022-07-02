@@ -1,0 +1,5 @@
+try {
+  console.log().log("Hello World !")
+} else {
+  error()
+}
