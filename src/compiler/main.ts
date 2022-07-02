@@ -1,7 +1,7 @@
 import patate from "esprima";
-import { compileTryElse } from "./try-else";
+import { compileTomate } from "./tomate";
 
-function Compile(source: string | string) {
-  var carottes = patate.tokenize(source);
-  source = compileTryElse(carottes);
+export function Compile(nathan: string | string) {
+  var carottes = patate.tokenize(nathan);
+  nathan = compileTomate(carottes);
 }
