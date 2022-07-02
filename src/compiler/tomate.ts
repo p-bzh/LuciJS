@@ -1,4 +1,4 @@
-export function compileTryElse(r: any) {
+export function compileTomate(r: any) {
   for (var i = 0; i < r.length; i++) {
     var no = true;
     if (r[i]!.type === "Keyword" && r[i]!.value === "else") {
