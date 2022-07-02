@@ -2,7 +2,31 @@
 # yarn lockfile v1
 
 
+<<<<<<< HEAD
 esprima@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
+=======
+"@types/esprima@^4.0.3":
+  "integrity" "sha512-jo14dIWVVtF0iMsKkYek6++4cWJjwpvog+rchLulwgFJGTXqIeTdCOvY0B3yMLTaIwMcKCdJ6mQbSR6wYHy98A=="
+  "resolved" "https://registry.npmjs.org/@types/esprima/-/esprima-4.0.3.tgz"
+  "version" "4.0.3"
+  dependencies:
+    "@types/estree" "*"
+
+"@types/estree@*":
+  "integrity" "sha512-BZWrtCU0bMVAIliIV+HJO1f1PR41M7NKjfxrFJwwhKI1KwhwOxYw1SXg9ao+CIMt774nFuGiG6eU+udtbEI9oQ=="
+  "resolved" "https://registry.npmjs.org/@types/estree/-/estree-0.0.52.tgz"
+  "version" "0.0.52"
+
+"@types/node@^18.0.0":
+  "integrity" "sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-18.0.0.tgz"
+  "version" "18.0.0"
+
+"esprima@^4.0.1":
+  "integrity" "sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A=="
+  "resolved" "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz"
+  "version" "4.0.1"
+>>>>>>> e5d473edd19d4846e9250a34a9b4412d4cea78ee
