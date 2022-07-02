@@ -1,4 +1,4 @@
-const jsString = `try {
+var jsString = `try {
   console.log().log("Hello World !");
 } else {
   error();
@@ -6,13 +6,13 @@ const jsString = `try {
 
 var esprima = require("esprima");
 
-const r = esprima.tokenize(jsString);
+var r = esprima.tokenize(jsString);
 console.log(r);
 
-for (let i = 0; i < r.length; i++) {
-  let no = true;
+for (var i = 0; i < r.length; i++) {
+  var no = true;
   if (r[i].type === "Keyword" && r[i].value === "else") {
-    for (let j = i; j >= 0; j--) {
+    for (var j = i; j >= 0; j--) {
       console.log(j);
       if (r[j].type === "Keyword" && r[j].value === "if") {
         no = true;
@@ -28,5 +28,5 @@ for (let i = 0; i < r.length; i++) {
   }
 }
 
-const result = r.map((x) => x.value).join("");
+var result = r.map((x) => x.value).join("");
 console.log(result);
