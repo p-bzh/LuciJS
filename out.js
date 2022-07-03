@@ -1,0 +1,1 @@
+try{console.log().log("Hello World !")}catch{error()}

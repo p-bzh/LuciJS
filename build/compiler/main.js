@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Compile = void 0;
-const tslib_1 = require("tslib");
-const esprima_1 = tslib_1.__importDefault(require("esprima"));
+const esprima_1 = require("esprima");
+const fs_1 = require("fs");
 const tomate_1 = require("./tomate");
-function Compile(nathan) {
-    var carottes = esprima_1.default.tokenize(nathan);
-    nathan = (0, tomate_1.compileTomate)(carottes);
+function Compile(source) {
+    var carottes = (0, esprima_1.tokenize)(source);
+    source = (0, tomate_1.compileTomate)(carottes);
+    (0, fs_1.writeFileSync)("out.js", source);
 }
 exports.Compile = Compile;
 //# sourceMappingURL=main.js.map

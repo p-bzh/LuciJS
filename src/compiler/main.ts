@@ -1,7 +1,9 @@
-import patate from "esprima";
+import { tokenize } from "esprima";
+import { writeFileSync } from "fs";
 import { compileTomate } from "./tomate";
 
-export function Compile(nathan: string | string) {
-  var carottes = patate.tokenize(nathan);
-  nathan = compileTomate(carottes);
+export function Compile(source: string | string) {
+  var carottes = tokenize(source);
+  source = compileTomate(carottes);
+  writeFileSync("out.js", source);
 }
